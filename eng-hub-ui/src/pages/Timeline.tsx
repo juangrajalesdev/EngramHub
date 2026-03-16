@@ -21,8 +21,7 @@ const Timeline: React.FC = () => {
       let currentObservationId: number | undefined = undefined;
       
       if (!reset && observations.length > 0) {
-        // Usamos el ID de la última observación cargada como cursor para cargar más
-        currentObservationId = observations[observations.length - 1].ID;
+        currentObservationId = observations[observations.length - 1].id;
       }
 
       const response = await getTimeline({
@@ -31,7 +30,7 @@ const Timeline: React.FC = () => {
         observation_id: currentObservationId,
       });
 
-      const newObs = response.Observations || [];
+      const newObs = response || [];
 
       if (reset) {
         setObservations(newObs);
@@ -80,7 +79,7 @@ const Timeline: React.FC = () => {
 
       <div className="space-y-4">
         {observations.map((obs, index) => (
-          <ObservationCard key={`${obs.ID}-${index}`} observation={obs} />
+          <ObservationCard key={`${obs.id}-${index}`} observation={obs} />
         ))}
       </div>
 

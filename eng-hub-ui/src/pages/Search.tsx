@@ -79,7 +79,7 @@ const SearchPage: React.FC = () => {
 
       <div className="space-y-4">
         {results.map((obs) => (
-          <ObservationCard key={obs.ID} observation={obs} />
+          <ObservationCard key={obs.id} observation={obs} />
         ))}
       </div>
     </div>

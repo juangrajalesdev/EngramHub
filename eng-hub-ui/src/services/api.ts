@@ -25,21 +25,25 @@ engramApi.interceptors.response.use(
 
 // --- Type Definitions ---
 export interface Observation {
-  ID: number;
-  Title: string;
-  Project: string | null;
-  Type: string; // e.g., 'bugfix', 'decision', 'discovery'
-  Author: string | null;
-  CreatedAt: string; // ISO 8601 format
-  Content: string; // Markdown content
-  Snippet: string; // FTS5 snippet for search results
+  id: number;
+  sync_id?: string;
+  session_id?: string;
+  title: string;
+  project: string | null;
+  type: string;
+  scope?: string;
+  author?: string | null; // Keep optional as it might be added by sync later
+  created_at: string;
+  updated_at?: string;
+  last_seen_at?: string;
+  content: string;
+  snippet?: string; // FTS5 snippet for search results
+  revision_count?: number;
+  duplicate_count?: number;
 }
 
-export interface TimelineResponse {
-  Observations: Observation[];
-  Total: number;
-  Limit: number;
-}
+// Since the endpoint returns an array directly, not an object with 'Observations' array
+export type TimelineResponse = Observation[];
 
 export interface SearchResponse {
   Observations: Observation[];
