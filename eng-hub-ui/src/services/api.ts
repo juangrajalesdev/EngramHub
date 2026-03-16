@@ -40,15 +40,12 @@ export interface Observation {
   snippet?: string; // FTS5 snippet for search results
   revision_count?: number;
   duplicate_count?: number;
+  rank?: number; // FTS5 rank for search results
 }
 
 // Since the endpoint returns an array directly, not an object with 'Observations' array
 export type TimelineResponse = Observation[];
-
-export interface SearchResponse {
-  Observations: Observation[];
-  // Add other relevant fields if the /search endpoint returns them
-}
+export type SearchResponse = Observation[];
 
 export interface SyncStatus {
   LocalPending: number;

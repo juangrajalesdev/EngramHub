@@ -25,7 +25,7 @@ const SearchPage: React.FC = () => {
       const response = await searchObservations(searchQuery, {
         project: activeProject || undefined,
       });
-      setResults(response.Observations || []);
+      setResults(response || []);
     } catch (err: any) {
       setError(err.message || 'Failed to perform search.');
     } finally {
