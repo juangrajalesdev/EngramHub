@@ -2,7 +2,7 @@
 
 > **El Dashboard Visual para la Memoria Semántica de Engram.**
 
-EngramHub es una aplicación web (Single Page Application) diseñada para funcionar como la interfaz gráfica oficial del sistema **Engram CLI**. Su objetivo principal es resolver la fragmentación del conocimiento en equipos de desarrollo, haciendo visible, gobernable y fácil de buscar la memoria persistente generada por agentes de IA (decisiones de arquitectura, bugs resueltos, patrones de código).
+EngramHub es una aplicación web (Single Page Application) diseñada para funcionar como la interfaz gráfica del sistema **Engram CLI**. Su objetivo principal es resolver la fragmentación del conocimiento en equipos de desarrollo, haciendo visible, gobernable y fácil de buscar la memoria persistente generada por agentes de IA (decisiones de arquitectura, bugs resueltos, patrones de código).
 
 ---
 
