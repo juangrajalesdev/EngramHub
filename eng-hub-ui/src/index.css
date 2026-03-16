@@ -1,0 +1,28 @@
+@import 'highlight.js/styles/github-dark.css'; /* Code block highlighting */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Catppuccin Mocha base styles */
+:root {
+  --mocha-base: #1e1e2e; /* Base background */
+  --mocha-text: #cdd6f4; /* Text color */
+  --mocha-lavender: #b4befe; /* Accent Lavender */
+  --mocha-sapphire: #74c7ec; /* Accent Sapphire */
+  --mocha-rose: #f38ba8;    /* Accent Rose */
+  --mocha-peach: #fab387;   /* Accent Peach */
+  --mocha-yellow: #f9e2af;  /* Accent Yellow */
+  --mocha-green: #a6e3a1;   /* Accent Green */
+
+  /* Define Tailwind's default theme colors if needed, or override them */
+  color-scheme: light dark;
+}
+
+/* Apply base styles */
+body {
+  background-color: var(--mocha-base);
+  color: var(--mocha-text);
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif; /* Example font */
+}
+
+/* Add any other global styles here */
