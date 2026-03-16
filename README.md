@@ -4,6 +4,10 @@
 
 EngramHub es una aplicación web (Single Page Application) diseñada para funcionar como la interfaz gráfica oficial del sistema **Engram CLI**. Su objetivo principal es resolver la fragmentación del conocimiento en equipos de desarrollo, haciendo visible, gobernable y fácil de buscar la memoria persistente generada por agentes de IA (decisiones de arquitectura, bugs resueltos, patrones de código).
 
+
+<img width="1885" height="992" alt="image" src="https://github.com/user-attachments/assets/11745254-4014-40c1-ab94-b0e0a6a7db95" />
+
+
 ---
 
 ## 🚀 Características Principales
